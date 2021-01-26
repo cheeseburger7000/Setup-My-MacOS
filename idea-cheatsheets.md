@@ -8,6 +8,15 @@ todo 整理出一份大的清单，方便查找
 
 ## 15 Shortcut 
 
+| Function | Win | Mac |
+| ---- | ---- | ---- |
+| Quick Tips | Alt + Enter(Maybe) | Opt + Enter |
+| Generate Code/Add New File | Alt + Insert | CMD + N |
+| Surround With | Ctrl + Alt + T | Opt + CMD |
+| Move Statement Up/Down | Ctrl + Shift + ↑/↓ | CMD + Shift + ↑/↓ | 
+| Cursor Before/After | Ctrl + Alt + ←/→ | Opt + CMD + ←/→ |
+| Go to Line/Column | Ctrl + G | ? |
+
 ```java
 // 1.Prompt or Suggestion: Alt + Enter
 // 2.Next Error: F2
@@ -37,7 +46,6 @@ todo 整理出一份大的清单，方便查找
 // 查看MVC REST路径：spring
 //
 # 2.Shortcuts
-// ctrl + n 行号跳转
 // ctrl + F12 类成员查找
 // ctrl + q javadoc
 // ctrl + p *方法参数提示
