@@ -7,7 +7,7 @@ Table of Content:
 - [Debug](#debug)
 - [Plugins](#plugins)
 
-## Shortcuts
+## 🎨 Shortcuts
 
 | Function | Win | Mac | Recommend |
 | ---- | ---- | ---- | ---- |
@@ -36,7 +36,7 @@ Table of Content:
 | Find Action(You don't remember all shortcuts) | Shift + Ctrl + A | Shift + CMD + A | 👍 |
 | Search Anything(for Classes, Files, CMD, Actions, support cmd like /appearance) | Tap Shift Twice | Tap Shift Twice | 👍 |
 
-## Actions
+## 🛠 Actions
 
 | Function | Instruction |
 | ---- | ---- |
@@ -49,14 +49,14 @@ Table of Content:
 | 实时模板 | live templates | 
 | 查看MVC REST路径 | spring |
 
-## Debug
+## 🐛 Debug
 
 // 1.抛出异常
 // 2.设置方法返回值
 // 3.计算表达式
 // 4.条件断点
 
-## Plugins
+## 🔌 Plugins
 
 // 1.lombok
 // 2.alibaba
