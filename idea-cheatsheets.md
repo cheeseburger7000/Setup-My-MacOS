@@ -11,7 +11,7 @@ Table of Content:
 
 | Function | Win | Mac | Recommend |
 | ---- | ---- | ---- | ---- |
-| Quick Tips | Alt + Enter(Maybe) | Opt + Enter | 👍 |
+| Quick Tips | Alt + Enter | Opt + Enter | 👍 |
 | Generate Code/Add New File | Alt + Insert | CMD + N | 👍 |
 | Surround With | Ctrl + Alt + T | Opt + CMD | |
 | Move Statement Up/Down | Ctrl + Shift + ↑/↓ | CMD + Shift + ↑/↓ | |
@@ -32,7 +32,7 @@ Table of Content:
 | Extend/Shrink Selection | Ctrl + W/(Shift + W) | Opt + up/down | 👍 |
 | The Block Comment | Ctrl + Shift + / | CMD + Shift + / | |
 | Complete Current Statement(ex: semi-colon, for or if statement) | Shift + Ctrl + Enter | Shift + CMD + ENTER | 👍 |
-| Refactor Tips | Ctrl + T and Shift + Ctrl + Alt + T | | | *
+| Refactor Tips | Ctrl + T and Shift + Ctrl + Alt + T | ? | |
 | Find Action(You don't remember all shortcuts) | Shift + Ctrl + A | Shift + CMD + A | 👍 |
 | Search Anything(for Classes, Files, CMD, Actions, support cmd like /appearance) | Tap Shift Twice | Tap Shift Twice | 👍 |
 
