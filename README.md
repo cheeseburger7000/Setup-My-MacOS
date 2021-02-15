@@ -4,11 +4,130 @@
 
 ## 📖 Table of Contents
 
-## Basic Settings
+- [⚙️ Basic Settings](#-basic-settings)
+- [📦 App](#-app)
+- [👨🏻‍💻 Dev](#-dev)
+  - [os-x-setup-commands](#os-x-setup-commands)
+  - [安装并配置 VSCode]
+  - [配置 Java 开发环境]
+  - [配置 Python3 开发环境]
+  - [配置 Node 开发环境]
+  - [Docker]
+  - [Firefox]
+  - [其它]
+- [Work with iPad]
+- [Mac OS Shortcuts]
+- [其它]
 
-1. 增强 MacOS 自带词典，支持朗文、牛津等英英词典、美式发音。参考这篇[文章](https://www.zhihu.com/question/20428599)
+## ⚙️ Basic Settings
 
-## Dev
+2. 设置 Dock. 移除不常用的 APP
+
+> 建议使用 <kbd>CMD</kbd> + <kbd>Space</kbd> 打开 Finder, Empty Trash 等其它 APP , 不要太依赖 Dock.
+
+2. 设置 Finder 
+
+在 Finder 中使用快捷键 <kbd>CMD</kbd> + <kbd>Shift</kbd> + <kbd>H</kbd> , 能够马上回到当前用户的家目录. 
+
+将常用的文件夹移动到个人收藏下. 例如 root根目录(前往-电脑)
+
+设置 Finder Preferences
+
+> 大多数 MacOS 的 APP 都可以使用 <kbd>CMD</kbd> + <kbd>,</kbd> 打开偏好设置. 
+
+设置 Tags
+
+显示-显示状态栏
+
+显示-显示路径栏
+
+显示-显示标签页栏
+
+3. 增强 MacOS 自带词典，支持朗文、牛津等英英词典、美式发音。参考[文章](https://www.zhihu.com/question/20428599)
+
+## 📦 App
+
+Spoitfy
+
+Twitter
+
+印象笔记
+
+微信
+
+百度网盘
+
+VPN
+
+坚果云
+
+Typora
+
+有道云笔记
+
+Xmind
+
+OneNote
+
+Omniplayer
+
+OneDrive
+
+WPS
+
+Unarchiver
+
+// iPage 设置
+
+PDF Export
+
+欧陆词典
+
+## 👨🏻‍💻 Dev
+
+### os-x-setup-commands
+
+```bash dev-setup.sh
+xcode-select --install
+
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew update
+
+brew cask install iterm2
+# 配置 iTerm2 主题为 Minimal
+# 配置 iTerm2 默认 Profile 的窗口字体大小为 24, 前景色为 #5acd5a. 第一个配置项位置: Preferences-Profiles-Text-Font, 第二个配置项位置: Preferences-Profiles-Colors-Foreground.
+# TODO 配置 iTerm2 快捷键行为 
+
+# oh my zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+brew install git
+brew install vcprompt
+# TODO update bash_profile. 配置 history, alias 等
+
+brew install --cask rectangle
+
+brew cask install alfred
+# set CMD+space to launch alfred
+# CMD + L 放大关键词
+
+brew install --cask firefox
+
+# TODO 安装 hyperSwitch // Silicon Mac 暂不支持 
+# https://isapplesiliconready.com/zh/app/HyperSwitch
+
+# install nvm/node
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+nvm install stable
+
+mkdir ~/dev
+
+#npm install -g lite-server eslint
+
+brew install --cask visual-studio-code
+# update vscode settings
+# install vscode extensions 
+```
 
 修改 hosts 文件
 
@@ -16,89 +135,108 @@
 sudo vi /etc/hosts
 ```
 
-terminal or iterm 使用快捷键 `CMD +` 放大 🔍 窗口
+### 安装并配置 VSCode
 
-### Editor
+安装 `code . ` <kbd>CMD</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> 选择 install 'code' command in PATH.
 
-VSCode
+参考插件清单 [user:w3cj](https://gist.github.com/w3cj/520eb023dd3531d1b654794f65aa434b) 并使用脚本直接批量安装, 例如 `hile read line; do code --install-extension "$line";done < vscode-extensions.txt`
 
-### Python3 Environment
+安装插件 Settings Sync
 
-todo 
+设置 [参考](https://github.com/CodingGarden/vscode-settings)
 
-### ☕️ Java Environment
+打开终端 <kbd>CMD</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> 输入 `>toggle int` 
 
-- jdk
-- maven
-- idea
-...
+### 配置 Java 开发环境
 
-[IntellIJ IDEA](https://www.jetbrains.com/idea/download/download-thanks.html?platform=macM1) support Apple Silicon!!!
+TODO JDK MAVEN
+
+[IntellIJ IDEA](https://www.jetbrains.com/idea/download/download-thanks.html?platform=macM1)
 
 1. Ultimate 版激活码
 2. 把 `idea <path to the folder>` 添加到命令行启动 `Tools > Create Command-line Launcher`
 
-## Reading
+### 配置 Python3 开发环境
 
-iPage
+MacOS 默认py为2.0
 
-[MacOS高效的读书笔记方法](https://www.youtube.com/watch?v=4Jg10PAmd08&list=PLbkko9cqTctew4zvXeeyfWJffQ7omfW1D&index=24)
+### 配置 Node 开发环境
 
-Markdown Editor
-PDF Export
+安装 [nvm](https://github.com/nvm-sh/nvm#install--update-script)
 
-欧陆词典
+```bash
+nvm list
+nvm install 14
+
+node -v
+npm -v
+```
+
+### Docker
+
+todo
+
+### Firefox
+
+快捷键
+
+<kbd>Control</kbd> + <kbd>Tab</kbd> 支持预览切换标签页
+
+about:config 搜索 browser:ctrlTab:recentlyUsedOrder false 可关闭预览标签页
+
+偏好设置
+
+- [x] General - Restore previous session
+- [x] General - Warn you when quitting the browser 
+- [x] Home - Homepage and new windows - Google
+- [x] Home - New tabs - Blank
+- [x] Search - Default Search Engine - DuckDuckGo
+
+> DuckDuckGo 支持快速搜索, 例如 !gh better google
+
+- [ ] Search - Search Suggestions. uncheck that, only show my search history.
+
+插件
+
+- tabliss.io 标签页皮肤
+- [uBlock Origin](https://github.com/gorhill/uBlock#firefox--firefox-for-android) 广告拦截
+- Privacy Badger // EFF 
+- [OneTab](https://addons.mozilla.org/en-US/firefox/addon/onetab/) 标签管理
+- JSON Viewer 火狐浏览器默认支持, [点击](https://www.reddit.com/r/javascript.json)测试
+- HTTPS Everywhere // EEF
+- [Stylus](https://addons.mozilla.org/en-US/firefox/addon/styl-us/) 设置不同网站的自定义样式. 例如
+  - [Github Dark](https://github.com/StylishThemes/GitHub-Dark)
+  - [Wikipedia Dark](https://github.com/StylishThemes/Wikipedia-Dark)
+- [Tamper Monkey](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/)
+  - [greasyfork.org](https://greasyfork.org/en)
+  - [Better Google](https://github.com/aligo/better-google)
+  - 如何自己开发浏览器脚本 先挖个坑😄
+- [Vue DevTools](https://github.com/vuejs/vue-devtools)
+- [React DevTools](https://addons.mozilla.org/en-US/firefox/addon/react-devtools/)
+
+审查元素
+
+- Settings - Themes - Dark
+
+### 其它
+
+Postman
+
+微信开发者工具
+
+Sourcetree
 
 ## Work with iPad
 
-...
+todo [MacOS高效的读书笔记方法](https://www.youtube.com/watch?v=4Jg10PAmd08&list=PLbkko9cqTctew4zvXeeyfWJffQ7omfW1D&index=24)
 
-## 基本快捷键
+## Mac OS Shortcuts
 
 - 聚焦搜索：CMD + 空格
 
+## 其它
 
-## todo
-
-[MacOS Web Dev Setup](https://github.com/fabien-h/macos-web-dev-setup#-install-docker)
-...
-
-## dev-setup.sh
-
-```bash
-xcode-select --install
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew update
-brew cask install iterm2
-# update iterm2 settings -> colors, keep directory open new shell, keyboard shortcuts
-brew install bash # latest version of bash
-# set brew bash as default shell
-brew install fortune
-brew install cowsay 
-brew install git
-brew install vcprompt
-# update bash_profile
-brew cask install spectacle
-brew cask install alfred
-# set CMD+space to launch alfred
-brew cask install firefox
-# install nvm/node
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
-nvm install stable
-mkdir ~/workspace
-npm install -g lite-server eslint
-brew cask install visual-studio-code
-# update vscode settings
-# install vscode extensions 
-```
-
-1. 安装 xcode
-2. 安装 [Homebrew](http://brew.sh)
-3. 使用 `brew case` 安装 iTerm2
-4. 配置 iTerm2 主题为 `Minimal`
-5. 配置 iTerm2 默认 Profile 的窗口字体大小为 `24` 前景色为 `#5acd5a`. 第一个配置项位置  `Preferences-Profiles-Text-Font` 第二个配置项位置：`Preferences-Profiles-Colors-Foreground`
-6. todo 配置 iTerm2 快捷键行为
-7. todo 安装最新版本的 bash. 并将将 bash 切换为最新的 /usr/local/bin/bash // ❌ M1 Mac 无法更新成功
+todo
 
 说明: MacOS 默认的 shell 是 `zsh`, 但是我更喜欢使用 `bash`. 可以使用 `bash --version` 查看 bash 的版本. 使用 `echo "$SHELL"` 查看当前使用的 shell 名称.
 
@@ -110,29 +248,22 @@ sudo nano /etc/shells
 chsh -s /usr/local/bin/bash
 ```
 
-8. todo 安装 fortune 和 cowsay // ❌ M1 Mac 无法更新成功
-
-```zsh
-fortune | cowsay
-
-# 企鹅
-cowsay -f tux hello 
-```
-
-9. todo vcprompt 自定义 .bash_profile
-10. todo 安装 spectacle // ❌ M1 Mac 无法更新成功 使用这个替代 https://rectangleapp.com/
-11. 安装 alfred
 12. todo 安装 hyperSwitch
 13. some stuff ... 浏览器插件等
 
 https://gist.github.com/w3cj/76cd9fb9f346e153b6f0dc46fd025620
 
-os-x-setup-commands.sh
+https://gist.github.com/w3cj?page=4
 
-vs-code-extensions.txt
+[MacOS Web Dev Setup](https://github.com/fabien-h/macos-web-dev-setup#-install-docker)
 
-## vscode 
+```bash
+brew install fortune
+brew install cowsay 
+# 企鹅
+# cowsay -f tux hello 
+```
 
-To make the transition from one computer to another seamless, VS Code has a sweet extension by the name of Settings Sync, which lets you upload your configurations to a GitHub Gist. Once they are up on GitHub, the extension takes care of keeping the following files in sync: settings file, keybindings, snippets, workspace folders, and extensions and their corresponding configurations.
+Airpods 和 Mac 交互
 
-The extension’s page has a thorough explanation on how to get it set up and should only take a couple of minutes to have your VS Code with your preferred settings.
+Jsonserver
