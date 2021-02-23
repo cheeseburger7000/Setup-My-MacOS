@@ -91,7 +91,8 @@ brew update
 
 brew cask install iterm2
 # 配置 iTerm2 主题为 Minimal
-# 配置 iTerm2 默认 Profile 的窗口字体大小为 24, 前景色为 #5acd5a. 第一个配置项位置: Preferences-Profiles-Text-Font, 第二个配置项位置: Preferences-Profiles-Colors-Foreground.
+# 配置 iTerm2 默认 Profile 的窗口字体大小为 24, 前景色为 #5acd5a. 
+# 第一个配置项位置: Preferences-Profiles-Text-Font, 第二个配置项位置: Preferences-Profiles-Colors-Foreground.
 # TODO 配置 iTerm2 快捷键行为 
 
 # oh my zsh
