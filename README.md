@@ -1,11 +1,13 @@
-# Setup My MacOS
+# Setup My Silicon MacOS
 
-在重装系统、环境同步等情况下。重新配置我的个性化MacOS开发环境 💻
+✨💻 在重装系统、环境同步等情况下。重新配置我的个性化MacOS开发环境。
 
 ## 📖 Table of Contents
 
 - [⚙️ Basic Settings](#-basic-settings)
-- [词典](#词典)
+  - [Dock](#-dock)
+  - [Finder](#-finder)
+- [📚 Dictionary](#-dictionary)
 - [📦 App](#-app)
 - [👨🏻‍💻 Dev](#-dev)
   - [os-x-setup-commands](#os-x-setup-commands)
@@ -22,81 +24,57 @@
 
 ## ⚙️ Basic Settings
 
-2. 设置 Dock. 移除不常用的 APP
+### Dock
 
-> 建议使用 <kbd>CMD</kbd> + <kbd>Space</kbd> 打开 Finder, Empty Trash 等其它 APP , 不要太依赖 Dock.
+移除不常用的 APP
 
-2. 设置 Finder 
+> 使用 <kbd>CMD</kbd> + <kbd>Space</kbd> 打开 Finder, Empty Trash 等其它 APP , 不要太依赖 Dock.
 
-在 Finder 中使用快捷键 <kbd>CMD</kbd> + <kbd>Shift</kbd> + <kbd>H</kbd> , 能够马上回到当前用户的家目录. 
+### Finder
 
-将常用的文件夹移动到个人收藏下. 例如 root根目录(前往-电脑)
+1. 将常用的文件夹移动到个人收藏下. 例如 root根目录(前往-电脑)
 
-设置 Finder Preferences
+> 在 Finder 中使用快捷键 <kbd>CMD</kbd> + <kbd>Shift</kbd> + <kbd>H</kbd> , 能够马上回到当前用户的家目录. 
+
+2. 设置 Finder Preferences
 
 > 大多数 MacOS 的 APP 都可以使用 <kbd>CMD</kbd> + <kbd>,</kbd> 打开偏好设置. 
 
-设置 Tags
+3. 设置 Tags
+4. 显示-显示状态栏
+5. 显示-显示路径栏
+6. 显示-显示标签页栏
 
-显示-显示状态栏
+## 📚 Dictionary
 
-显示-显示路径栏
-
-显示-显示标签页栏
-
-## 词典
-
-[hallelujahIM](https://github.com/dongyuwei/hallelujahIM/blob/master/README-En.md) 智能英文拼写补全, 拥有英文写作 ✏️
-
-[Bob](https://github.com/ripperhe/Bob) 截图翻译
-
-[grammarly](https://www.grammarly.com/native/mac) 英文写作语法纠正
-
-开启 MacOS 内置单词、句子发音. 系统偏好设置 - 辅助功能 - 朗读内容 - ☑️ 朗读所选内容. 开启之后使用快捷键触发 <kbd>Opt</kbd> + <kbd>ESC</kbd>
-
-强制唤醒内置词典 <kbd>Ctrl</kbd> + <kbd>CMD</kbd> + <kbd>D</kbd>
-
-增强 alfred. 支持 `tr concurrent`  
-
-增强 MacOS 自带词典. [《柯林斯双解》for macOS](https://placeless.net/blog/macos-dictionaries). 也可参考[文章](https://www.zhihu.com/question/20428599)
+1. [hallelujahIM](https://github.com/dongyuwei/hallelujahIM/blob/master/README-En.md) 智能英文拼写补全, 拥有英文写作 ✏️
+2. [Bob](https://github.com/ripperhe/Bob) 截图翻译
+3. [grammarly](https://www.grammarly.com/native/mac) 英文写作语法纠正
+4. 开启 MacOS 内置单词、句子发音. 系统偏好设置 - 辅助功能 - 朗读内容 - ☑️ 朗读所选内容. 开启之后使用快捷键触发 <kbd>Opt</kbd> + <kbd>ESC</kbd>
+5. 强制唤醒内置词典 <kbd>Ctrl</kbd> + <kbd>CMD</kbd> + <kbd>D</kbd>
+6. 增强 alfred. 支持 `tr concurrent`  
+7. 增强 MacOS 自带词典. [《柯林斯双解》for macOS](https://placeless.net/blog/macos-dictionaries). 也可参考[文章](https://www.zhihu.com/question/20428599)
+8. 安装欧陆词典
 
 ## 📦 App
 
-Spoitfy
-
-Twitter
-
-印象笔记
-
-微信
-
-百度网盘
-
-VPN
-
-坚果云
-
-Typora
-
-有道云笔记
-
-Xmind
-
-OneNote
-
-Omniplayer
-
-OneDrive
-
-WPS
-
-Unarchiver
+1. Spoitfy
+2. Twitter
+3. 印象笔记
+4. 微信
+5. 百度网盘
+6. todo VPN
+7. 坚果云
+8. todo 换掉 Typora
+9. 有道云笔记
+10. Xmind // 幕布
+11. OneDrive
+12. Omniplayer
+13. todo 换掉 WPS
+14. Unarchiver 压缩、解压工具
+15. GoodNotes 5
 
 // iPage 设置
-
-PDF Export
-
-欧陆词典
 
 ## 👨🏻‍💻 Dev
 
@@ -144,7 +122,7 @@ brew install --cask visual-studio-code
 # install vscode extensions 
 ```
 
-修改 hosts 文件
+### 修改 hosts 文件
 
 ```bash
 sudo vi /etc/hosts
